@@ -32,6 +32,21 @@ function UpdateClassIcon(){
     else if(field.value === "Ladino"){
         iconCode = "ra ra-plain-dagger ra-2x";
     }
+    else if(field.value === "Bruxo"){
+    }
+    else if(field.value === "Monge"){
+    }
+    else if(field.value === "Alquimista"){
+    }
+    else if(field.value === "Mago"){
+    }
+    else if(field.value === "Sacerdote"){
+    }
+    else if(field.value === "Druida"){
+    }
+    else if(field.value === "Camponês"){
+    }
+    
 
     iElement.className = iconCode;
 
