@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/rpg-awesome/css/rpg-awesome.min.css">
+    
+    <title>Charsheet</title>
+
+    <link rel="icon" class="ra-archery-target">
+</head>
+
+<body onload="UpdateAttrMods(), UpdateCharName()">
+    <div class="sheet">
+        <div class="header">
+            Ficha de Personagem de
+            <input id="char-name"    type="text" placeholder="_______________" oninput="UpdateCharName()">
+            <input id="players-name" type="text" placeholder="___________________">
+        </div>
+
+        <div class="area">
+            <div id="char-img" onclick="ChangeCharImg()">
+                <img class="chosen" src="./assets/halforc.jpg" alt="Upload an image for your character">   
+                <img class="" src="./assets/femaleorc.jpg" alt="Upload an image for your character">   
+                <img class="" src="./assets/human.jpg" alt="Upload an image for your character">   
+                <img class=""  src="./assets/jerek.jpg" alt="Upload an image for your character">   
+            </div>
+
+            <div class="attributes">
+                FOR<input type="text" value="11" oninput="UpdateThisMod(0)"><div class="mod"></div>
+                DES<input type="text" value="14" oninput="UpdateThisMod(1)"><div class="mod"></div>
+                VIG<input type="text" value="10" oninput="UpdateThisMod(2)"><div class="mod"></div>
+                INT<input type="text" value="16" oninput="UpdateThisMod(3)"><div class="mod"></div>
+                ESP<input type="text" value="20" oninput="UpdateThisMod(4)"><div class="mod"></div>
+                CAR<input type="text" value="8"  oninput="UpdateThisMod(5)"><div class="mod"></div>
+            </div>
+
+            <div class="fields">
+                <input type="text" placeholder="Raça">
+                <i id="class-icon" ></i>
+                <input type="text" placeholder="Classe" oninput="UpdateClassIcon()">
+                <input type="text" placeholder="" >
+                <input type="text" placeholder="">
+                <input type="text" placeholder="">
+                <input type="text" placeholder="">
+                <input type="text" placeholder="">
+            </div>
+
+            <i class="ra ra-perspective-dice-random ra-lg" ondblclick="SortAttributes()"></i>
+        </div>
+    </div>
+</body>
+<footer>
+    <a id="bySad" href="https://www.youtube.com/watch?v=tLyRpGKWXRs&list=PLrI02jX0R8z9Xlb_oZM_s93Nm13V_Y5Xq&index=123" target="_blank" rel="noopener noreferrer">
+        Page made by Sadman.
+    </a>
+    <script src="./script.js"></script>
+</footer>
+</html>

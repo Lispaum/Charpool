@@ -1,0 +1,75 @@
+*{
+    font-family: Georgia, Cambria, Cochin,  Times, 'Times New Roman', serif;
+}
+
+body {
+    --paper-color:  rgba(255, 255, 255, 0.8);
+}
+
+.area{
+    background-color: var(--paper-color);
+    height: 560px;
+    padding: 4px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 10px 40px 10px 40px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    background-color: var(--paper-color);
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    margin: 4px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+.header > input {
+    background-color: inherit;
+    width: auto;
+    font-size: inherit;
+    font-weight: bold;
+    border-style: none;
+}
+
+#players-name{
+    position: absolute;
+    right: 0px;
+    width: auto;
+    background-color: inherit;
+    font-size: 14px;
+    text-align: right;
+}
+
+div > input{
+    height: 20px;
+    width: 200px;
+    margin: 4px;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px; /*precisa ter px*/
+    padding: 4px;
+}
+
+#submit{
+    height:  30px;
+    width: 50px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+}
