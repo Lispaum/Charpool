@@ -74,15 +74,10 @@ function UpdateThisMod(index){
     mods[index].innerHTML = Math.floor( (attributes[index].value-10)/2 );
 
 }
-function d6()
-{
-    /*return Math.floor( Math.random() * (max - min + 1) ) + min;*/
-    return Math.floor(Math.random() * (6)) + 1;
-}
 function SortAttributes(){
-
+    
     let total = 0
-
+    
     for(let i=0; i<6; i++)
     {
         let sorted = 0
@@ -95,17 +90,22 @@ function SortAttributes(){
             {
                 return dice
             }
-              
+            
             return menor
         })
-
+        
         sorted = soma1 - menorzim 
-
+        
         total += attributes[i].value = sorted;
     }
     
     UpdateAttrMods();
-
+    
+}
+function d6()
+{
+    /*return Math.floor( Math.random() * (max - min + 1) ) + min;*/
+    return Math.floor(Math.random() * (6)) + 1;
 }
 
 
