@@ -16,40 +16,48 @@ function ChangeCharImg(){
 
 }
 function UpdateClassIcon(){
-    field = document.querySelector("input[placeholder='Classe']")
-    iElement = document.querySelector('#class-icon')
-    iconCode = "";
+    const classe = document.querySelector("input[placeholder='Classe']").value.toLowerCase()
+    const iElement = document.querySelector('#class-icon')
+    var iconCode = "";
 
-    if(field.value === "Caçador" ){
+    if(classe === "caçador" ){
         iconCode = "ra ra-archery-target ra-2x";
     }
-    else if(field.value === "Guerreiro"){
+    else if(classe === "guerreiro"){
         iconCode = "ra ra-axe ra-2x";
     }
-    else if(field.value === "Paladino"){
+    else if(classe === "paladino"){
         iconCode = "ra ra-shield ra-2x";
     }
-    else if(field.value === "Ladino"){
+    else if(classe === "ladino"){
         iconCode = "ra ra-plain-dagger ra-2x";
     }
-    else if(field.value === "Bruxo"){
+    else if(classe === "bruxo"){
+        iconCode = "ra ra-bleeding-eye ra-2x";
     }
-    else if(field.value === "Monge"){
+    else if(classe === "monge"){
+        iconCode = "ra ra-doubled ra-2x";
     }
-    else if(field.value === "Alquimista"){
+    else if(classe === "alquimista"){
+        iconCode = "ra ra-round-bottom-flask ra-2x";
     }
-    else if(field.value === "Mago"){
+    else if(classe === "mago"){
+        iconCode = "ra ra-rune-stone ra-2x";
     }
-    else if(field.value === "Sacerdote"){
+    else if(classe === "sacerdote"){
+        iconCode = "ra ra-sun ra-2x";
     }
-    else if(field.value === "Druida"){
+    else if(classe === "druida"){
+        iconCode = "ra ra-sprout-emblem ra-2x";
     }
-    else if(field.value === "Camponês"){
+    else if(classe === "feiticeiro"){
+        iconCode = "ra ra-trefoil-lily ra-2x";
     }
-    
+    else if(classe === "camponês"){
+        iconCode = "ra ra-pawn ra-2x";
+    }
 
     iElement.className = iconCode;
-
 }
 function UpdateAttrMods(){
    // console.log('UpdateAttrMods()');
